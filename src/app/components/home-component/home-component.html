@@ -1,0 +1,19 @@
+<main class="relative flex min-h-[calc(100vh-80px)] items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 px-6">
+  <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl"></div>
+  <div class="absolute -bottom-32 -right-20 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"></div>
+  <section class="relative max-w-3xl rounded-3xl border border-white/10 bg-white/10 p-10 text-center shadow-2xl backdrop-blur-md sm:p-16">
+    <span class="inline-block rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-1 text-sm font-semibold text-cyan-200">
+      GESTIÓN DE APUESTAS
+    </span>
+    <h1 class="mt-6 text-5xl font-black tracking-tight text-white sm:text-6xl">Bienvenido a Apuestas</h1>
+    <p class="mx-auto mt-5 max-w-xl text-lg leading-8 text-slate-300">
+      Consulta tus apuestas y revisa los últimos resultados de forma sencilla.
+    </p>
+    <a
+      [routerLink]="['/apuestas']"
+      class="mt-8 inline-block rounded-xl bg-cyan-400 px-8 py-4 font-bold text-slate-950 shadow-lg shadow-cyan-500/20 transition-all hover:-translate-y-1 hover:bg-cyan-300"
+    >
+      Ver apuestas
+    </a>
+  </section>
+</main>
