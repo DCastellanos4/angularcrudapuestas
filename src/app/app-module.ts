@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { ServiceApuestas } from './services/apuestas.service';
 import { DeleteComponent } from './components/delete-component/delete-component';
 import { CreateComponent } from './components/create-component/create-component';
+import { ServiceEquipos } from './services/equipos.service';
+import { EquipoComponent } from './components/equipo-component/equipo-component';
+import { JugadoresComponent } from './components/jugadores-component/jugadores-component';
 
 @NgModule({
   declarations: [
@@ -19,9 +22,16 @@ import { CreateComponent } from './components/create-component/create-component'
     ApuestasComponent,
     DeleteComponent,
     CreateComponent,
+    EquipoComponent,
+    JugadoresComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [provideBrowserGlobalErrorListeners(), provideHttpClient(), ServiceApuestas],
+  providers: [
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient(),
+    ServiceApuestas,
+    ServiceEquipos,
+  ],
   bootstrap: [App],
 })
 export class AppModule {}
